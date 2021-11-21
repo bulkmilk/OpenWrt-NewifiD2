@@ -16,5 +16,3 @@ sed -i 's/192.168.1.1/192.168.10.254/g' package/base-files/files/bin/config_gene
 sed -i 's/100/101/g' package/network/services/dnsmasq/files/dhcp.conf
 sed -i 's/150/100/g' package/network/services/dnsmasq/files/dhcp.conf
 sed -i 's/12h/24h/g' package/network/services/dnsmasq/files/dhcp.conf
-
-# sed -i '/exit 0/d' package/lean/default-settings/files/zzz-default-settings
