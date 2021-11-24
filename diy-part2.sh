@@ -22,3 +22,8 @@ sed -i "3i uci set network.lan.netmask='255.255.255.0'" package/lean/default-set
 sed -i "4i uci set network.lan.gateway='192.168.10.254'" package/lean/default-settings/files/zzz-default-settings
 sed -i "5i uci set network.lan.dns='119.29.29.29 182.254.116.116'" package/lean/default-settings/files/zzz-default-settings
 sed -i "6i uci commit network\n" package/lean/default-settings/files/zzz-default-settings
+
+# Install Argon Theme
+# https://github.com/jerrykuku/luci-theme-argon
+rm -rf package/lean/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
