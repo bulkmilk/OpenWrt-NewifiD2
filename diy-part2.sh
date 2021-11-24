@@ -27,3 +27,8 @@ sed -i "6i uci commit network\n" package/lean/default-settings/files/zzz-default
 # https://github.com/jerrykuku/luci-theme-argon
 rm -rf package/lean/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+
+# 安装京东签到插件
+# https://github.com/jerrykuku/luci-app-jd-dailybonus
+rm -rf package/lean/luci-app-jd-dailybonus
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/lean/luci-app-jd-dailybonus
