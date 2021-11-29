@@ -10,11 +10,6 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# 安装最新京东签到插件
-# https://github.com/jerrykuku/luci-app-jd-dailybonus
-rm -rf package/lean/luci-app-jd-dailybonus
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/lean/luci-app-jd-dailybonus
-
 # Modify default IP
 # sed -i 's/192.168.1.1/192.168.10.254/g' package/base-files/files/bin/config_generate
 
