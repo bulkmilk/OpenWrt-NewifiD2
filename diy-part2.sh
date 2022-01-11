@@ -26,3 +26,6 @@ sed -i "3i uci commit dhcp\n" package/lean/default-settings/files/zzz-default-se
 sed -i "3i uci set dhcp.lan.leasetime='24h'" package/lean/default-settings/files/zzz-default-settings
 sed -i "3i uci set dhcp.lan.limit='50'" package/lean/default-settings/files/zzz-default-settings
 sed -i "3i uci set dhcp.lan.start='101'" package/lean/default-settings/files/zzz-default-settings
+
+# 删除默认密码
+# sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-default-settings
