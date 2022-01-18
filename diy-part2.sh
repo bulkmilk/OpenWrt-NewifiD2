@@ -16,14 +16,17 @@
 #
 sed -i "3i uci commit network\n" package/lean/default-settings/files/zzz-default-settings
 sed -i "3i uci set network.lan.delegate='0'" package/lean/default-settings/files/zzz-default-settings
-sed -i "3i uci set network.wan.delegate='0'" package/lean/default-settings/files/zzz-default-settings
-sed -i "3i uci set network.lan.dns='119.29.29.29 182.254.116.116'" package/lean/default-settings/files/zzz-default-settings
+# sed -i "3i uci set network.lan.dns='119.29.29.29 182.254.116.116'" package/lean/default-settings/files/zzz-default-settings
+sed -i "3i uci set network.lan.dns='114.114.114.114'" package/lean/default-settings/files/zzz-default-settings
 sed -i "3i uci set network.lan.gateway='192.168.10.254'" package/lean/default-settings/files/zzz-default-settings
 sed -i "3i uci set network.lan.netmask='255.255.255.0'" package/lean/default-settings/files/zzz-default-settings
 sed -i "3i uci set network.lan.ipaddr='192.168.10.254'" package/lean/default-settings/files/zzz-default-settings
+sed -i "3i uci set network.wan.delegate='0'" package/lean/default-settings/files/zzz-default-settings
+sed -i "3i uci set network.wan.proto='pppoe'" package/lean/default-settings/files/zzz-default-settings
+sed -i "3i uci set network.wan6.delegate='0'" package/lean/default-settings/files/zzz-default-settings
 
 sed -i "3i uci commit dhcp\n" package/lean/default-settings/files/zzz-default-settings
-sed -i "3i uci set dhcp.lan.leasetime='24h'" package/lean/default-settings/files/zzz-default-settings
+sed -i "3i uci set dhcp.lan.leasetime='12h'" package/lean/default-settings/files/zzz-default-settings
 sed -i "3i uci set dhcp.lan.limit='50'" package/lean/default-settings/files/zzz-default-settings
 sed -i "3i uci set dhcp.lan.start='101'" package/lean/default-settings/files/zzz-default-settings
 
